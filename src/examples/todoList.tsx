@@ -22,12 +22,10 @@ function TodoList() {
     setInput('');
   };
 
-  // 删除任务
   const deleteTodo = (id: number) => {
     setTodos(todos.filter(todo => todo.id !== id));
   };
 
-  // 切换完成状态
   const toggleComplete = (id: number) => {
     setTodos(
       todos.map(todo =>
@@ -37,7 +35,7 @@ function TodoList() {
   };
 
   return (
-    <div style={{ maxWidth: 400, margin: '0 auto' }}>
+    <div>
       <h2>Todo List</h2>
       <input
         type="text"
