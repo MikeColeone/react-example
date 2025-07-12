@@ -1,5 +1,5 @@
 import React from "react";
-import CanvasTable, { RowData } from "./components/CanvasTable";
+import CanvasTable, { type RowData } from "./canvasTable";
 
 const generateDemoData = (count: number): RowData[] => {
   return Array.from({ length: count }, (_, i) => ({
